@@ -3,12 +3,62 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-:root {
+/* サイトに表示する初期配色 */
+/* Natural */
+:root{
     --color-main: #1F456E;
     --color-background: #E4D5B7;
     --color-sub: #426B59;
 }
+
+/* Candy Pop */
+:root[data-theme="candy"] {
+    --color-main: #5A145F;
+    --color-background: #FFB8D2;
+    --color-sub: #00BFA6;
+}
+
+/* Sunset */
+:root[data-theme="sunset"] {
+    --color-main: #713B32;
+    --color-background: #F5E5D5;
+    --color-sub: #D45D40;
+}
+
+:root[data-theme="retro"] {
+    --color-main: #24205A;
+    --color-background: #FF6B35;
+    --color-sub: #FFEA00;
+}
+/* Pop Art */
+:root[data-theme="popart"] {
+    --color-main: #171717;
+    --color-background: #F4F0E8;
+    --color-sub: #E60023;
+}
+
+/* Mono */
+:root[data-theme="mono"] {
+    --color-main: #F1F0E9;
+    --color-background: #252525;
+    --color-sub: #D3E65C;
+}
+
+/* ヘッダー部分 */
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+/* テーマ切り替えボタン */
+#theme-toggle {
+    background: var(--color-sub);
+    color: var(--color-background);
+    border: 2px solid var(--color-sub);
+    border-radius: 30px;
+    padding: 10px 20px;
+    letter-spacing: 0.1em;
+}
+
 /* ボディー部分 */
 body {
     background-color: var(--color-background);
@@ -19,7 +69,7 @@ body {
 }
 /* MY PORTFOLIO 部分*/
 .main-title{
-    color: #426B59;
+    color: var(--color-sub);
     font-size: 16px;
     font-weight: lighter;
 }
