@@ -2,7 +2,7 @@
 const curtain = document.querySelector(".lgt-curtain");
 const waiting = document.querySelector(".lgt-waiting");
 
-const duration = 800;
+const duration = 500;
 const hold = 300;
 const ease = "cubic-bezier(0.65, 0, 0.35, 1)";
 

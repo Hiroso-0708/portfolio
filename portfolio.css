@@ -133,7 +133,7 @@ footer a:hover::before {
     display: grid;
     place-items: center;
 
-    background: var(--lgt-color);
+    background: var(--color-sub);
 
     transform: translateY(100%);
     visibility: hidden;
