@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* ボディー部分 */
 body {
     background-color: #E4D5B7;
     color: #1F456E;
@@ -11,13 +12,14 @@ body {
     font-family: 'Poppins', 'Noto Sans JP', sans-serif;
     padding: 30px 40px;
 }
-
+/* MY PORTFOLIO 部分*/
 .main-title{
     color: #426B59;
     font-size: 16px;
     font-weight: lighter;
 }
 
+/* タイピングアニメーション */
 .typing {
     overflow: hidden;
     white-space: nowrap;
@@ -40,7 +42,7 @@ body {
         border-color: transparent;
     }
 }
-
+/* 自己紹介セクション */
 #about {
 
     margin-top: 50px;
@@ -56,16 +58,40 @@ p {
     padding-top: 10px;
     line-height: 2;
 }
-ul {
-    /* リストのスタイルを削除 */
-    list-style-type: none;
+
+/* ナビゲーション */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* ナビゲーションボタン */
+a.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: #426B59;
+    border: 2px solid #426B59;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    color: #E4D5B7;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition-duration: 0.3s;
 }
 
-#hobby,
-#works {
-    margin-top: 20px;
+/* ボタンのホバー効果 */
+a.btn:hover {
+    /* ボタンの色を反転させる */
+    background: #E4D5B7;
+    color: #426B59;
 }
 
+/* フッター部分 */
 footer {
     text-align: center;
     padding: 40px 0;
@@ -94,6 +120,7 @@ footer a:hover::before {
     width: 100%;
 }
 
+/* 画面遷移 */
 .page-card {
     display: block;
     padding: 20px;
