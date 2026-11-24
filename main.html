@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<!-- 画面遷移アニメーション -->
+<div class="lgt-curtain" aria-hidden="true">
+    <div class="lgt-waiting">WAITING<span>...</span></div>
+</div>
+
+<script src="transition.js" defer></script>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- 自己紹介セクション -->
+        <section id="about">
+            <h1 class="main-title">MY PORTFOLIO</h1>
+            <h2>
+                <div class="typing">Hello, I'm Sota.</div>
+                <div class="typing">廣口壮太です。</div>
+            </h2>
+            <!-- 説明文 -->
+            <p class="description">
+                University of Aizu<br>
+                Computer Science & Engineering<br>
+                このポートフォリオを成長の機会と捉え、作成してみました。
+                ごゆっくりしていってください。
+            </p>
+        </section>
+        
+        <nav>
+            <a href="hobby.html" data-transition>Hobbies</a>
+            <a href="works.html" data-transition>Works</a>
+        </nav>
+    </main>
+    </main>
+
+    <footer>
+        <!-- Gmail クリックでメールを送信 -->
+        <a href="souta0708@gmail.com">souta0708@gmail.com</a>
+    </footer>
+</body>
