@@ -13,18 +13,41 @@
     <div class="lgt-waiting">WAITING<span>...</span></div>
 </div>
 
+<!-- Lucie読み込み -->
+ <script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- JavaScript読み込み -->
 <script src="transition.js" defer></script>
+<script src="theme.js" defer></script>
 
 <body>
-    <header></header>
-    <body>
-        <nav>
-            <a href="main.html" data-transition>Home</a>
-            <a href="works.html" data-transition>Works</a>
+    <header>
+         <nav class="top_nav">
+            <div class="nav_page">
+                <a href="main.html" class="nav_item" data-transition>Home</a>
+                <a href="works.html" class="nav_item" data-transition>Works</a>
+            </div>
+            <button id="theme-toggle" type="button">
+                <i data-lucide="palette"></i>
+            </button>
         </nav>
-    </body>
+    </header>
+    <!-- <main>
+        <section id="hobby">
+            <h1 class="main-title">HOBBIES</h1>
+            <p class="description">
+                趣味はプログラミング、ゲーム、アニメ鑑賞です。<br>
+                プログラミングは大学で学んだことを活かして、個人でWebサイトを作成したりしています。<br>
+                ゲームは主にFPSやアクションゲームをプレイしています。<br>
+                アニメはジャンル問わず幅広く見ています。
+            </p>
+        </section>
+    </main> -->
     <footer>
         <a href="souta0708@gmail.com">souta0708@gmail.com</a>
     </footer>
-        
+    
+    <!-- Lucideアイコンをsvgにする -->
+    <script>lucide.createIcons();</script>
+
 </body>

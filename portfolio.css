@@ -51,12 +51,28 @@ header {
 }
 /* テーマ切り替えボタン */
 #theme-toggle {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--color-sub);
+    border-radius: 50%;
     background: var(--color-sub);
     color: var(--color-background);
-    border: 2px solid var(--color-sub);
-    border-radius: 30px;
-    padding: 10px 20px;
-    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-toggle svg {
+    width: 22px;
+    height: 22px;
+}
+
+#theme-toggle:hover {
+    background: var(--color-background);
+    color: var(--color-sub);
 }
 
 /* ボディー部分 */
@@ -98,8 +114,7 @@ body {
     }
 }
 /* 自己紹介セクション */
-#about {
-
+#about{
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -109,13 +124,13 @@ body {
     font-size: 30px;
 }
 
-p {
+.description {
     padding-top: 10px;
     line-height: 2;
 }
 
-/* ナビゲーション */
-nav {
+/* homeのnav */
+.main-nav {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -224,4 +239,46 @@ html.transition-pending .lgt-curtain {
     .lgt-waiting span {
         animation: none;
     }
+}
+
+/* hobby,worksのnav */
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_page {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav_item {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-main);
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transition-duration: 0.3s;
+}
+
+.nav_item::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: var(--color-sub);
+    transition: width 0.3s ease;
+}
+
+/* リンクにマウスを合わせたときのアニメーション */
+.nav_item:hover::before {
+    width: 80%;
 }

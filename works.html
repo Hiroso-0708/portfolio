@@ -13,18 +13,34 @@
     <div class="lgt-waiting">WAITING<span>...</span></div>
 </div>
 
+<!-- Lucie読み込み -->
+ <script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- JavaScript -->
 <script src="transition.js" defer></script>
+<script src="theme.js" defer></script>
 
 <body>
-    <header></header>
-    <body>
-        <nav>
-            <a href="main.html" data-transition>Home</a>
-            <a href="hobby.html" data-transition>Hobbies</a>
+    <header>
+        <nav class="top_nav">
+            <div class="nav_page">
+                <a href="main.html" class="nav_item" data-transition>Home</a>
+                <a href="hobby.html" class="nav_item" data-transition>Hobbies</a>
+            </div>
+            <button id="theme-toggle" type="button">
+                <i data-lucide="palette"></i>
+            </button>
+    </header>
         </nav>
+
+    <body>
+        
     </body>
     <footer>
         <a href="souta0708@gmail.com">souta0708@gmail.com</a>
     </footer>
-        
+    
+    <!-- Lucideアイコンをsvgにする -->
+    <script>lucide.createIcons();</script>
+
 </body>

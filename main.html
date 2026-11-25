@@ -15,11 +15,18 @@
     <div class="lgt-waiting">WAITING<span>...</span></div>
 </div>
 
+<!-- Lucie読み込み -->
+ <script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- JavaScript -->
 <script src="transition.js" defer></script>
 <script src="theme.js" defer></script>
+
 <body>
     <header>
-        <button id="theme-toggle" type="button">Push!</button>
+        <button id="theme-toggle" type="button">
+            <i data-lucide="palette"></i>
+        </button>
     </header>
     <main>
         <!-- 自己紹介セクション -->
@@ -37,7 +44,7 @@
             </p>
         </section>
         
-        <nav>
+        <nav class="main-nav">
             <a href="hobby.html" class="btn" data-transition>Hobbies</a>
             <a href="works.html" class="btn" data-transition>Works</a>
         </nav>
@@ -48,4 +55,8 @@
         <!-- Gmail クリックでメールを送信 -->
         <a href="souta0708@gmail.com">souta0708@gmail.com</a>
     </footer>
+
+    <!-- Lucideアイコンをsvgにする -->
+    <script>lucide.createIcons();</script>
+
 </body>
