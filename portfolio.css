@@ -83,12 +83,14 @@ body {
     font-family: 'Poppins', 'Noto Sans JP', sans-serif;
     padding: 30px 40px;
 }
-/* MY PORTFOLIO 部分*/
-.main-title{
+/* Title部分*/
+.main-title,
+.contact {
     color: var(--color-sub);
     font-size: 16px;
     font-weight: lighter;
 }
+
 
 /* タイピングアニメーション */
 .typing {
@@ -178,27 +180,28 @@ footer {
     padding: 40px 0;
 }
 
-footer a {
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
     position: relative;
-    color: var(--color-sub);
+    color: var(--color-main);
     text-decoration: none;
+    gap: 8px;
 }
 
-/* リンクの下線 */
-footer a::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--color-sub);
-    transition: width 0.3s ease;
-}
-
-/* リンクにマウスを合わせたときのアニメーション */
-footer a:hover::before {
-    width: 100%;
+/* アイコンサイズ */
+.footer-links svg,
+.footer-links img {
+    width: 22px;
+    height: 22px;
 }
 
 /* 画面遷移 */
@@ -267,7 +270,8 @@ html.transition-pending .lgt-curtain {
     gap: 25px;
 }
 
-.nav_item {
+.nav_item,
+.links {
     position: relative;
     text-decoration: none;
     color: var(--color-main);
@@ -278,7 +282,8 @@ html.transition-pending .lgt-curtain {
     transition-duration: 0.3s;
 }
 
-.nav_item::before {
+.nav_item::before,
+.links::before {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -291,7 +296,8 @@ html.transition-pending .lgt-curtain {
 }
 
 /* リンクにマウスを合わせたときのアニメーション */
-.nav_item:hover::before {
+.nav_item:hover::before,
+.links:hover::before {
     width: 80%;
 }
 
