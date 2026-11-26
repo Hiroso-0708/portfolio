@@ -121,7 +121,8 @@ body {
     margin-bottom: 50px;
 }
 #profile #about h2,
-#hobby h2{
+#hobby h2,
+#work #about h2 {
     width: 90%;
     padding-bottom: 10px;
     border-bottom: 0.5px solid var(--color-sub);
@@ -270,6 +271,11 @@ html.transition-pending .lgt-curtain {
     gap: 25px;
 }
 
+.nav_item span,
+.links {
+    position: relative;
+}
+
 .nav_item,
 .links {
     position: relative;
@@ -282,13 +288,17 @@ html.transition-pending .lgt-curtain {
     transition-duration: 0.3s;
 }
 
-.nav_item::before,
+/* nav_itemクラスとno-paddingクラスを持つ場合、paddingをなくす */
+.nav_item.no-padding {
+    padding: 0;
+}
+
+.nav_item span::before,
 .links::before {
     content: '';
     position: absolute;
     bottom: -1px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 0;
     height: 1px;
     background-color: var(--color-sub);
@@ -296,9 +306,9 @@ html.transition-pending .lgt-curtain {
 }
 
 /* リンクにマウスを合わせたときのアニメーション */
-.nav_item:hover::before,
+.nav_item:hover span::before,
 .links:hover::before {
-    width: 80%;
+    width: 100%;
 }
 
 /* 写真グリッド */
@@ -321,7 +331,8 @@ html.transition-pending .lgt-curtain {
     height: 100%;
     display: block;
     object-fit: cover;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 20px;;
     transition: transform .6s ease;
 }
 
@@ -387,4 +398,36 @@ html.transition-pending .lgt-curtain {
 }
 .photo16 {
     grid-row: span 4;
+}
+
+.work-card {
+    border: 0.5px solid var(--color-sub);
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
+    height: 550px;
+    margin-bottom: 20px;
+}
+
+.work-image img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.work-image {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.work-info {
+    flex: 1;
+    width: 95%;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 15px;
+    border-top: 0.5px solid var(--color-sub);
 }

@@ -24,19 +24,57 @@
     <header>
         <nav class="top_nav">
             <div class="nav_page">
-                <a href="main.html" class="nav_item" data-transition>Home</a>
-                <a href="hobby.html" class="nav_item" data-transition>Hobbies</a>
+                <a href="main.html" class="nav_item" data-transition>
+                    <span>Home</span>
+                </a>
+                <a href="hobby.html" class="nav_item" data-transition>
+                    <span>Hobbies</span>
+                </a>
             </div>
             <button id="theme-toggle" type="button">
                 <i data-lucide="palette"></i>
             </button>
     </header>
         </nav>
+    <!-- 制作物紹介 -->
+    <main id="work">
+        <section id="about">
+            <h1 class="main-title">MY PORTFOLIO</h1>
+            <h2><div class="typing">WORKS</div></h2>
+            <p class="description">ここは制作物紹介です。</p>
+        </section>
 
-    <body>
+        <article class="work-card">
+            <div class="work-image">
+                <img src="images/portfolio.png" alt="Portfolio Website">
+            </div>
+            <div class="work-info">
+                <p>01 / WEBSITE</p>
+                <h2>PORTFOLIO</h2>
+                <p>HTML/CSS/JavaScript</p>
+                <p>自分を紹介するポートフォリオサイト。</p>
+                <a href="main.html" class="nav_item no-padding" data-transition="">
+                    <span>VEW PROJECT</span>
+                </a>
+            </div>
+        </article>
+        
+        <article class="work-card">
+            <div class="work-image">
 
-    </body>
-    
+            </div>
+            <div class="work-info">
+                <p>02 / APPLICATION</p>
+                <h2>Circle Accounting App</h2>
+                <p>React Native/Node.js</p>
+                <p>サークルの会計管理を効率化するアプリ。</p>
+                <a href="#" class="nav_item no-padding" data-lucide="">
+                    <span>VEW PROJECT</span>
+                </a>
+             </div>
+        </article>
+    </main>
+
     <footer>
         <h1 class="contact">CONTACT</h1>
         <h2>Get in touch.</h2>
